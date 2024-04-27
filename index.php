@@ -45,7 +45,7 @@ curl_close($ch); //Cerramos nuestra sesion de cURL
     <hgroup>
         <h3><?= $data["title"];  ?> se estrena en <?= $data["days_until"]; ?> días</h3>
         <p>Fecha de estreno: <?= $data["release_date"]; ?></p>
-        <p>La siguiente película es: <?= $data["following_production"]["title"];?></p>
+        <p>La siguiente película es: <b><?= $data["following_production"]["title"];?></b></p>
     </hgroup>
 </main>
 
